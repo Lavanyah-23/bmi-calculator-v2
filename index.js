@@ -1,4 +1,5 @@
 
+//calculate functions are here
 
 function calculateBmi(weight,height)
     {
@@ -39,6 +40,8 @@ function calculateBmi(weight,height)
       function calculateDietCalories(weightToLose, caloriesUsedDaily) {
         return weightToLose > 0 ? caloriesUsedDaily - 500 : caloriesUsedDaily + 500;
       }
+      //validation functions start from here
+
       function validateNumberOfInputs(argv) {
         if (argv.length !== 7) {
           console.log(`
@@ -149,7 +152,10 @@ function calculateBmi(weight,height)
       
           process.exit();
         }
-      }
+      } 
+
+      // output function
+
 
       function formatOutput(userObject) {
         return `
@@ -186,7 +192,7 @@ function calculateBmi(weight,height)
       `;
 }
     
-      
+      //bmi function
 
 function bmiCalculator() {
     validateNumberOfInputs(process.argv);
